@@ -1,8 +1,102 @@
 {% extends "core/base.html" %}
+{% load static %}
 {% block content %}
 
-<div class="container">
-    <h1 class="display-3 mb-5 pb-5">Hello, world!</h1>
-</div>
+<section class="hero-section">
+    <div class="container w-75 text-white text-center">
+        <div class='col'>
+            <h1 class="display-3 fw-normal">AGAH Solutions</h1>
+            <p class="fs-3 fw-light">Digitalização de empresas e automação de processos</p>
+            <p class="fs-5 fw-light">Ganhe mais tempo de produtividade para focar no que realmente importa</p>
+        </div>
+    </div>
+</section>
+
+<section class='about-section' id="about">
+    <div class="container w-75 text-white fs-5 fw-light">
+        <div class='row py-5 gx-5 d-flex justify-content-between'>
+            <div class='col-6'>
+                <h1 class="display-6">Nosso Trabalho</h1>
+                <p>Nossa missão é maximizar a produtividade do seu negócio com a ajuda da tecnologia. Conosco, empresas se desenvolvem digitalmente de maneira fácil e ágil. Muitos funcionários perdem seu caro e precioso tempo de trabalho realizando tarefas automatizáveis, rendendo menos para a empresa do que se estivessem produzindo, vendendo ou pensando em novas estratégias.</p>
+                <p>Entre em contato por <a class="my-link" href="mailto:contato@agahsolutions.com">Email</a> para darmos início à digitalização do seu negócio e maximizar seu rendimento.</p>
+            </div>
+            <div class='col-6'>
+                <div class='row gy-3'>
+                    <div class='col-12'>
+                        <h1 class="display-6">Asistência Técnica</h1>
+                        <p>Nossa equipe de suporte está disponível todos os dias, incluindo finais de semana e feriados, com horário de funcionamento das 10:00 às 23:59.</p>
+                    </div>
+                    <div class='col-12'>
+                        <h1 class="display-6">Sistemas Exclusivos</h1>
+                        <p>Além de sistemas para gestão, temos serviços de assessoria digital para desenvolver o melhor sistema ou aplicativo <strong>específico para o seu negócio</strong>.</p>
+                        <p>Entre em <a class="my-link" href="mailto:contato@agahsolutions.com">contato</a> conosco para solicitar um orçamento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% comment %} <div class='row'>
+            <p class='align-self-start'>Nossos clientes:</p>
+            <div class='col align-self-center'>
+                <a href="#">
+                    <img src="{% static 'core/images/time_out_refuges_logo.png' %}" alt="...">
+                    <p>Time Out Refuges</p>
+                </a>
+            </div>
+            <div class='col align-self-center'>
+                <a href="#">
+                    <img src="{% static 'core/images/zatelier_logo.webp' %}" alt="...">
+                </a>
+            </div>
+        </div> {% endcomment %}
+    </div>
+</section>
+
+<section class="z-section bg-dark text-light" id='z_section'>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="row">
+                    <h1 class="display-6">Z Atelier</h1>
+                </div>
+                <div class="row mt-3 mb-2">
+                    <p>    Officia ea commodo magna nostrud dolor aliqua nisi sit occaecat mollit eiusmod est nisi culpa. Non labore dolore cillum occaecat occaecat. Nulla nisi sunt proident id do est quis voluptate ut. Amet ad id pariatur sit excepteur. Deserunt nulla consectetur enim enim cillum laboris nisi reprehenderit. Exercitation voluptate amet ad tempor sit deserunt cupidatat sunt non occaecat exercitation nulla do.</p>
+                </div>
+                <div class="row">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn my-btn-inactive">Estoque</a></li>
+                        <li class="list-inline-item"><a class="btn my-btn-inactive">Vendas</a></li>
+                        <li class="list-inline-item"><a class="btn my-btn-inactive">Impacto de Produção</a></li>
+                        <li class="list-inline-item"><a class="btn my-btn-inactive">Fluxo de Caixa</a></li>
+                        <li class="list-inline-item mt-3"><a class="btn my-btn-inactive">Conexão com Site</a></li>
+                        <li class="list-inline-item"><a class="btn my-btn-active">Visitar Site</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="time-out-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="row">
+                    <h1 class="display-6">Time Out Refuges</h1>
+                </div>
+                <div class="row mt-3">
+                    <p>    Enim commodo mollit pariatur consequat fugiat et velit adipisicing et magna voluptate. Eiusmod irure nostrud irure pariatur enim aliqua officia sint anim. Esse fugiat Lorem adipisicing irure in deserunt voluptate duis. Nostrud non qui deserunt eiusmod voluptate excepteur qui labore mollit sit sit. Eiusmod aliquip nostrud incididunt labore nisi sint nisi proident cillum dolor aute duis. Mollit elit ipsum excepteur mollit fugiat aliqua enim consequat est eiusmod enim laboris.</p>
+                </div>
+                <div class="row">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a class="btn my-btn-outline-dark">Web Design</a></li>
+                        <li class="list-inline-item"><a class="btn my-btn-outline-dark">UX / UI</a></li>
+                        <li class="list-inline-item"><a class="btn my-btn-outline-dark">Marketing Digital</a></li>
+                        <li class="list-inline-item mt-3"><a class="btn my-btn-outline-dark">Análise de Vendas</a></li>
+                        <li class="list-inline-item"><a class="btn my-btn-dark">Visitar Site</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div></section>
 
 {% endblock content %}

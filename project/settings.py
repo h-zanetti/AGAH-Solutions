@@ -126,9 +126,10 @@ USE_THOUSAND_SEPARATOR = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_FILES_DIR = [
-    os.path.join(BASE_DIR, 'static'),
+    # os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'core/static'),
 ]
 
 # Custom User

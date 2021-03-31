@@ -40,11 +40,11 @@ def login_view(request):
         form = AuthenticationForm()
 
     context = {
-        'title': 'Entrar',
+        'title': 'Boas-vindas',
         'form': form,
     }
 
-    return render(request, 'core/base_forms.html', context)
+    return render(request, 'users/login.html', context)
 
 
 def logout_view(request):
