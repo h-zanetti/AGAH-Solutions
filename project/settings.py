@@ -129,7 +129,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_FILES_DIR = [
     # os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'core/static'),
+    # os.path.join(BASE_DIR, 'core/static'),
 ]
 
 # Custom User

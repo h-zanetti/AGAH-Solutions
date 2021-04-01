@@ -1,0 +1,219 @@
+.hero-section {
+    background-image: linear-gradient(to right, rgba(20, 1, 50, 0.5), rgba(20, 1, 50, 0)), url('../images/lamp-bg.png');
+    background-position: bottom;
+    height: 100vh;
+    background-size: cover;
+    margin-top: -56px;
+    padding-top: 25vh;
+    padding-bottom: 30vh;
+}
+
+.about-section {
+    background-image: linear-gradient(rgba(62, 2, 162, 0.9), rgba(62, 2, 162, 0.7));
+    height: 101vh;
+    background-size: cover;
+    padding-top: 5vh;
+    padding-bottom: 30vh;
+}
+
+.z-section {
+    background-image: linear-gradient(to right, rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0)), url('../images/zatelier_section_bg.png');
+    height: 101vh;
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+}
+
+.time-out-section {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)), url('../images/time_out_section_bg.png');
+    /* background-color: #f4f4f4; */
+    height: 101vh;
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    color: rgb(62, 2, 162);
+}
+
+.purple {
+    color: rgb(62, 2, 162);
+}
+
+.bg-purple {
+    background-color: rgb(62, 2, 162);
+}
+
+
+.my-link {
+    color: rgb(235, 227, 61);
+    text-decoration: None;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+
+    .my-link:hover {
+        color: rgb(158, 151, 9);
+    }
+
+.my-link-dark {
+    color: rgb(62, 2, 162);
+    text-decoration: None;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+
+    .my-link-dark:hover {
+        color: #31017e;
+    }
+
+.my-link-light {
+    color: #F9FAFB;
+    text-decoration: None;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+
+    .my-link-light:hover {
+        color: #f0f2f5;
+    }
+
+.ta-justify {
+    text-align: justify;
+}
+
+.my-btn-active {
+    text-decoration: None;
+    background-color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    border-radius: 30px;
+    padding: 0.25em 0.75em;
+    text-align: center;
+    color: #212529;
+    text-transform: uppercase;
+}
+
+    .my-btn-active:hover {
+        text-decoration: None;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 0.25em 0.75em;
+        text-align: center;
+        color: #212529;
+        text-transform: uppercase;
+    }
+
+.my-btn-inactive {
+    text-decoration: None;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    padding: 0.25em 0.75em;
+    text-align: center;
+    color: #cccccc;
+    text-transform: uppercase;
+}
+
+    .my-btn-inactive:hover {
+        text-decoration: None;
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 0.25em 0.75em;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+.my-btn-outline-dark {
+    text-decoration: None;
+    border: 1px solid rgb(62, 2, 162);
+    border-radius: 30px;
+    padding: 0.25em 0.75em;
+    text-align: center;
+    color: rgb(62, 2, 162);
+    text-transform: uppercase;
+}
+
+    .my-btn-outline-dark:hover {
+        text-decoration: None;
+        border: 1px solid rgb(62, 2, 162);
+        border-radius: 30px;
+        background-color: rgb(62, 2, 162);
+        padding: 0.25em 0.75em;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+.my-btn-dark {
+    text-decoration: None;
+    border: 1px solid rgb(62, 2, 162);
+    background-color: rgb(62, 2, 162);
+    border-radius: 30px;
+    padding: 0.25em 0.75em;
+    text-align: center;
+    color: #F8F9FA;
+    text-transform: uppercase;
+}
+
+    .my-btn-dark:hover {
+        text-decoration: None;
+        border: 1px solid #31017e;
+        border-radius: 30px;
+        background-color: #31017e;
+        padding: 0.25em 0.75em;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+
+.my-btn-outline-light {
+    text-decoration: None;
+    border: 1px solid #F9FAFB;
+    border-radius: 30px;
+    padding: 0.25em 0.75em;
+    text-align: center;
+    color: #F9FAFB;
+    text-transform: uppercase;
+}
+
+    .my-btn-outline-light:hover {
+        text-decoration: None;
+        border: 1px solid #F9FAFB;
+        border-radius: 30px;
+        background-color: #F9FAFB;
+        padding: 0.25em 0.75em;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+    }
+
+.form-control {
+    margin: 5px 0;
+}
+
+.form-control:focus {
+    border-color: #31017e;
+    box-shadow: 0 0 0 4px rgba(62, 2, 162, 0.5);
+}
+
+.my-divider {
+    height: 2px;
+    background-color: rgba(62, 2, 162, 0.5);
+}
+
+u {
+    text-decoration: None;
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+}
+
+.text-shadow-sm {
+    text-shadow: 0 3px 5px black;
+}
+
+.text-shadow-md {
+    text-shadow: 3px 3px 9px black;
+}
+
+.text-shadow-lg {
+    text-shadow: 0 5px 3px black;
+}
