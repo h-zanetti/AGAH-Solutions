@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,13 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = config('SECRET_KEY')
-SECRET_KEY = 'c%h=h&$#09)d4$ds&7@r%xhzsr+6p$f6z7y*=&fxe!zzx2p36w'
+SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = 'c%h=h&$#09)d4$ds&7@r%xhzsr+6p$f6z7y*=&fxe!zzx2p36w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.agahsolutions.com']
 
 
 # Application definition
@@ -81,8 +80,12 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
     }
 }
 
@@ -127,11 +130,8 @@ USE_THOUSAND_SEPARATOR = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_FILES_DIR = [
-    # os.path.join(BASE_DIR, 'static'),
-    # os.path.join(BASE_DIR, 'core/static'),
-]
 
 # Custom User
 AUTH_USER_MODEL = 'users.User'
 LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
